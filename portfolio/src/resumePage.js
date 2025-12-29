@@ -5,18 +5,63 @@ const ResumePage = () => {
 
   return (
     <>
-        <MovingGradient/>
-        <div className="min-h-screen bg-pink-60 flex flex-col items-center pt-32 px-10 pb-16">
-        <div className="w-full max-w-5xl mb-6 relative">
-            <h2 className="text-5xl font-display2 italic font-bold text-center">
+      <MovingGradient />
+
+      <div
+        className="
+          min-h-screen bg-pink-60 flex flex-col items-center
+          pt-32 px-10 pb-16
+          max-sm:pt-36
+          max-sm:px-5
+        "
+      >
+        <div className="w-full max-w-5xl mb-6 relative max-sm:mb-4">
+          <h2 className="text-5xl font-display2 italic font-bold text-center max-sm:text-4xl">
             My Resume
-            </h2>
-            
+          </h2>
         </div>
-        <div className="w-full max-w-5xl h-[80vh] rounded-xl overflow-hidden shadow bg-white">
-            <iframe src={pdfPath} title="Resume PDF" className="w-full h-full" />
+
+        <div className="hidden sm:block w-full max-w-5xl h-[80vh] rounded-xl overflow-hidden shadow bg-white">
+          <iframe
+            src={pdfPath}
+            title="Resume PDF"
+            className="w-full h-full"
+          />
         </div>
+
+        <div className="sm:hidden w-full max-w-md mt-6 space-y-4">
+          <a
+            href={pdfPath}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="
+              block w-full text-center
+              px-6 py-4 rounded-xl
+              bg-white text-black
+              font-semibold text-lg
+              shadow-md
+              hover:bg-white/90 transition
+            "
+          >
+            View Resume
+          </a>
+
+          <a
+            href={pdfPath}
+            download="Mishell_Cardenas_Resume.pdf"
+            className="
+              block w-full text-center
+              px-6 py-3 rounded-xl
+              border border-black/10
+              text-black/80
+              font-medium
+              bg-white/60
+            "
+          >
+            Download PDF
+          </a>
         </div>
+      </div>
     </>
   );
 };
