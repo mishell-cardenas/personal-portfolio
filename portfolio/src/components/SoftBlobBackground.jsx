@@ -1,23 +1,28 @@
 import React, { useMemo } from "react";
 
 export default function SoftBlobBackground() {
-  // Generate stars once (stable positions)
   const stars = useMemo(() => {
-    const count = 90; // change this for more/less stars
+    const count = 90;
     return Array.from({ length: count }).map((_, i) => {
-      const size = Math.random() * 2.9 + 0.6; // 0.6px - 2.8px
-      const left = Math.random() * 100; // vw
-      const top = Math.random() * 100; // vh
-      const duration = Math.random() * 2.8 + 1.6; // 1.6s - 4.4s
-      const delay = Math.random() * 3.5; // 0s - 3.5s
-      const opacity = Math.random() * 0.25 + 0.1; // base opacity
+      const size = Math.random() * 2.9 + 0.6;
+      const left = Math.random() * 100;
+      const top = Math.random() * 100;
+      const duration = Math.random() * 2.8 + 1.6;
+      const delay = Math.random() * 3.5;
+      const opacity = Math.random() * 0.25 + 0.1;
       return { id: i, size, left, top, duration, delay, opacity };
     });
   }, []);
 
+  const isPhone = typeof window !== "undefined" && window.innerWidth < 768;
+
+  const blur = isPhone ? "blur(45px)" : "blur(60px)";
+  const saturate = isPhone ? "saturate(145%)" : "saturate(115%)";
+  const scale = isPhone ? "scale(1.12)" : "scale(1.05)";
+  const opacity = isPhone ? 1 : 0.95;
+
   return (
     <div className="pointer-events-none fixed inset-0 -z-10 overflow-hidden">
-
       <div className="absolute inset-0" style={{ background: "#ECE7E1" }} />
 
       <div
@@ -32,9 +37,9 @@ export default function SoftBlobBackground() {
             radial-gradient(900px 800px at 82% 70%, rgba(90,98,48,0.80) 0%, rgba(90,98,48,0) 65%),
             radial-gradient(900px 700px at 50% 55%, rgba(184,155,108,0.55) 0%, rgba(184,155,108,0) 60%)
           `,
-          filter: "blur(60px) saturate(115%)",
-          transform: "scale(1.05)",
-          opacity: 0.95,
+          filter: `${blur} ${saturate}`,
+          transform: scale,
+          opacity,
         }}
       />
 

@@ -3,7 +3,15 @@ import { MdEmail } from "react-icons/md";
 
 export default function Sidebar() {
   return (
-    <div className="fixed left-12 top-40 z-50 hidden md:flex flex-col items-center gap-6">
+    <div
+      className="
+        fixed left-12 top-40 z-50
+        hidden
+        landscape:flex
+        md:flex
+        flex-col items-center gap-6
+      "
+    >
       <a
         href="https://www.github.com/mishell-cardenas"
         target="_blank"
