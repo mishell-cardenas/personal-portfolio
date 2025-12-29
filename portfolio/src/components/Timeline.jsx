@@ -25,12 +25,14 @@ function TimelineEntry({
   return (
     <div
       ref={ref}
-      className={`relative flex w-full my-8 ${
-        isLeft ? "md:justify-start" : "md:justify-end"
-      } justify-center`}
+      className={`
+        relative flex w-full my-8 justify-center
+        max-sm:my-6
+        ${isLeft ? "md:justify-start" : "md:justify-end"}
+      `}
     >
       <div className="pointer-events-none absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2">
-        <div className="w-5 h-5 rounded-full border-4 border-white shadow bg-pink-300" />
+        <div className="w-5 h-5 rounded-full border-4 border-white shadow bg-pink-300 max-sm:w-4 max-sm:h-4 max-sm:border-[3px]" />
       </div>
 
       <motion.div
@@ -43,39 +45,62 @@ function TimelineEntry({
         transition={{ duration: 0.5, delay: 0.1 }}
         className="w-full md:w-[45%]"
       >
-        <div className="bg-white/60 backdrop-blur-lg border border-white/30 p-6 rounded-2xl shadow-xl transition transform hover:-translate-y-1 hover:scale-[1.02]">
-          <div className="flex items-center mb-4">
-            <div className="bg-pink-400 p-3 rounded-full mr-4">
-              {Icon ? <Icon className="text-white text-xl" /> : null}
+        <div className="bg-white/60 backdrop-blur-lg border border-white/30 p-6 rounded-2xl shadow-xl transition transform hover:-translate-y-1 hover:scale-[1.02] max-sm:p-5">
+          <div className="flex items-center mb-4 max-sm:mb-3">
+            <div className="bg-pink-400 p-3 rounded-full mr-4 max-sm:p-2.5 max-sm:mr-3">
+              {Icon ? (
+                <Icon className="text-white text-xl max-sm:text-lg" />
+              ) : null}
             </div>
 
             <div>
-              <h3 className="text-xl font-bold text-black">{title}</h3>
-              {subtitle ? <p className="text-black">{subtitle}</p> : null}
+              <h3 className="text-xl font-bold text-black max-sm:text-lg">
+                {title}
+              </h3>
+              {subtitle ? (
+                <p className="text-black max-sm:text-sm">{subtitle}</p>
+              ) : null}
             </div>
           </div>
 
-          <div className="flex items-center justify-start gap-4 mb-2 text-gray-500">
+          <div
+            className="
+              flex items-center justify-start gap-4 mb-2 text-gray-500
+              max-sm:flex-wrap
+              max-sm:gap-3
+              max-sm:text-sm
+            "
+          >
             <div className="flex items-center gap-1.5">
-              <CiCalendar className="text-lg" />
+              <CiCalendar className="text-lg max-sm:text-base" />
               <span>{date}</span>
             </div>
+
             {location ? (
-              <div className="flex items-center gap-1.5 whitespace-nowrap">
-                <CiLocationOn className="text-lg" />
+              <div
+                className="
+                  flex items-center gap-1.5
+                  whitespace-nowrap
+                  max-sm:whitespace-normal
+                "
+              >
+                <CiLocationOn className="text-lg max-sm:text-base" />
                 <span>{location}</span>
               </div>
             ) : null}
           </div>
 
-          <p className="text-gray-800 leading-relaxed font-semibold text-justify italic">
+          <p className="text-gray-800 leading-relaxed font-semibold italic text-justify max-sm:text-left max-sm:text-sm">
             {description}
           </p>
 
           {bullets.length > 0 && (
-            <ul className="mt-2 space-y-2 list-disc list-inside text-gray-700">
+            <ul className="mt-2 space-y-2 list-disc list-inside text-gray-700 max-sm:text-sm">
               {bullets.map((point, idx) => (
-                <li key={idx} className="leading-relaxed text-justify">
+                <li
+                  key={idx}
+                  className="leading-relaxed text-justify max-sm:text-left"
+                >
                   {point}
                 </li>
               ))}
@@ -104,17 +129,17 @@ export default function Timeline({ items = [], title = "Timeline" }) {
 
   return (
     <section className="w-full">
-      <h2 className="text-5xl font-display italic font-bold mb-12 text-center">
+      <h2 className="text-5xl font-display italic font-bold mb-12 text-center max-sm:text-4xl max-sm:mb-8">
         {title}
       </h2>
 
-      <div className="relative max-w-6xl mx-auto px-4">
+      <div className="relative max-w-6xl mx-auto px-4 max-sm:px-3">
         <div
           className="
             absolute left-1/2 -translate-x-1/2
             h-full w-1 rounded
             bg-gradient-to-b from-pink-200 via-[#ede6df] to-[#9ba759]
-        "
+          "
         />
 
         {items.map((item, idx) => (
