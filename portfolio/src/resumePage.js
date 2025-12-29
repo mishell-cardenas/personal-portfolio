@@ -43,22 +43,7 @@ const ResumePage = () => {
               hover:bg-white/90 transition
             "
           >
-            View Resume
-          </a>
-
-          <a
-            href={pdfPath}
-            download="Mishell_Cardenas_Resume.pdf"
-            className="
-              block w-full text-center
-              px-6 py-3 rounded-xl
-              border border-black/10
-              text-black/80
-              font-medium
-              bg-white/60
-            "
-          >
-            Download PDF
+            View/Download Resume
           </a>
         </div>
       </div>
