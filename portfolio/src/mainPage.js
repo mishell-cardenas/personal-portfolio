@@ -65,7 +65,7 @@ const MainPage = () => {
           </h2>
 
           <h4 className="text-xl md:text-3xl font-display2 text-black mt-4 max-sm:text-lg max-sm:mt-2 max-sm:px-2">
-            I'm a Computer Science student who loves applying my knwoledge{" "}
+            I'm a Computer Science student who loves applying my knowledge{" "}
             <span className="hidden sm:inline">
               <br />
             </span>
