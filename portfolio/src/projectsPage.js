@@ -24,20 +24,47 @@ import sap3 from "./assets/sap3.png";
 const ProjectsPage = () => {
   return (
     <>
-      <MovingGradient/>
-      <div className="min-h-screen flex flex-col items-center justify-center text-center px-4 space-y-7 pt-28 pb-28">
-        <h2 className="text-5xl font-display2 italic font-bold mb-6">
+      <MovingGradient />
+      <div
+        className="
+          min-h-screen flex flex-col items-center justify-center text-center
+          px-4 space-y-7 pt-28 pb-28
+          max-sm:pt-36
+          max-sm:pb-20
+          max-sm:space-y-5
+        "
+      >
+        <h2 className="text-5xl font-display2 italic font-bold mb-6 max-sm:text-4xl max-sm:mb-4">
           My Personal Projects
         </h2>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-6xl w-full">
-          <div className="bg-white p-8 rounded-lg shadow">
-            <Carousel images={[portfolio1, portfolio2, portfolio3, portfolio4, portfolio5, portfolio6]} height="h-58" />
-            <h3 className="text-xl font-semibold mb-2 text-center">
+
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-6xl w-full max-sm:gap-5">
+
+          <div className="bg-white p-8 rounded-lg shadow max-sm:p-5">
+            <Carousel
+              images={[
+                portfolio1,
+                portfolio2,
+                portfolio3,
+                portfolio4,
+                portfolio5,
+                portfolio6,
+              ]}
+              height="h-58"
+            />
+            <h3 className="text-xl font-semibold mb-2 text-center max-sm:text-lg">
               Portfolio Website
             </h3>
-            <p>Web based application to showcase my information in my personal portfolio.</p>
-            <TechPill tools={["REACT", "JAVSCRIPT", "TAILWIND CSS"]} />
-            <div className="flex justify-center mt-4">
+            <p className="max-sm:text-sm max-sm:leading-relaxed">
+              Web based application to showcase my information in my personal
+              portfolio.
+            </p>
+
+            <div className="max-sm:mt-2">
+              <TechPill tools={["REACT", "JAVSCRIPT", "TAILWIND CSS"]} />
+            </div>
+
+            <div className="flex justify-center mt-4 max-sm:mt-3">
               <a
                 href="https://github.com/mishell778/personal-portfolio"
                 target="_blank"
@@ -49,22 +76,27 @@ const ProjectsPage = () => {
               </a>
             </div>
           </div>
-          <div className="bg-white p-8 rounded-lg shadow">
+
+          <div className="bg-white p-8 rounded-lg shadow max-sm:p-5">
             <Carousel
               images={[mb1, mb2, mb3, mb4, mb5, mb6, mb7, mb8]}
               height="h-58"
             />
-            <h3 className="text-xl font-semibold mb-2 text-center">
+            <h3 className="text-xl font-semibold mb-2 text-center max-sm:text-lg">
               GreenTrack: Microgreens Order Management System
             </h3>
-            <p>
+            <p className="max-sm:text-sm max-sm:leading-relaxed">
               Web based application to help microgreen farms manage their day to
               day operations.
             </p>
-            <TechPill
-              tools={["PYTHON", "TYPESCRIPT", "REACT", "MYSQL", "FAST API"]}
-            />
-            <div className="flex justify-center mt-4">
+
+            <div className="max-sm:mt-2">
+              <TechPill
+                tools={["PYTHON", "TYPESCRIPT", "REACT", "MYSQL", "FAST API"]}
+              />
+            </div>
+
+            <div className="flex justify-center mt-4 max-sm:mt-3">
               <a
                 href="https://github.com/mishell-cardenas/microgreen_app"
                 target="_blank"
@@ -76,20 +108,25 @@ const ProjectsPage = () => {
               </a>
             </div>
           </div>
-          <div className="bg-white p-6 rounded-lg shadow">
+
+          <div className="bg-white p-6 rounded-lg shadow max-sm:p-5">
             <Carousel images={[sap1, sap2, sap3]} height="h-58" />
-            <h3 className="text-xl font-semibold mb-2 text-center">
+            <h3 className="text-xl font-semibold mb-2 text-center max-sm:text-lg">
               SAP Logistics Data Integration
             </h3>
-            <p>
+            <p className="max-sm:text-sm max-sm:leading-relaxed">
               Web based application to help steel importing companies manage the
               sourcing and procurement process of the products through SAP
               Business One.
             </p>
-            <TechPill
-              tools={["REACT", "JAVASCRIPT", "HTML", "CSS", "SAP HANA"]}
-            />
-            <div className="flex justify-center mt-4">
+
+            <div className="max-sm:mt-2">
+              <TechPill
+                tools={["REACT", "JAVASCRIPT", "HTML", "CSS", "SAP HANA"]}
+              />
+            </div>
+
+            <div className="flex justify-center mt-4 max-sm:mt-3">
               <a
                 href="https://github.com/mishell778/infoImportaciones"
                 target="_blank"
