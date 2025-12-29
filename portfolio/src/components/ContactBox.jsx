@@ -1,4 +1,3 @@
-import { Mail, Phone } from "lucide-react";
 import { useEffect, useState } from "react";
 
 const ContactSection = () => {
@@ -81,7 +80,7 @@ const ContactSection = () => {
              p-8 shadow-xl"
     >
       {status?.success ? (
-        <p className="self-center text-center text-2xl font-medium text-indigo-600">
+        <p className="self-center text-center text-2xl font-medium text-black">
           {status.message}
         </p>
       ) : (
