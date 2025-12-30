@@ -61,7 +61,7 @@ const ProjectsPage = () => {
             </p>
 
             <div className="max-sm:mt-2">
-              <TechPill tools={["REACT", "JAVSCRIPT", "TAILWIND CSS"]} />
+              <TechPill tools={["REACT", "JAVASCRIPT", "TAILWIND CSS"]} />
             </div>
 
             <div className="flex justify-center mt-4 max-sm:mt-3">
