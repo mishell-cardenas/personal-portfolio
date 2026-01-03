@@ -5,18 +5,20 @@ export default function Sidebar() {
   return (
     <div
       className="
-        fixed left-12 top-40 z-50
+        fixed left-12 top-1/2 -translate-y-1/2
+        z-50
         hidden
         landscape:flex
         md:flex
         flex-col items-center gap-6
       "
     >
+      <div className="w-px h-56 bg-black/70 mt-2" />
       <a
         href="https://www.github.com/mishell-cardenas"
         target="_blank"
         rel="noopener noreferrer"
-        className="text-black hover:text-pink-400 transition"
+        className="text-black hover:text-pink-500 transition"
       >
         <FaGithub size={28} />
       </a>

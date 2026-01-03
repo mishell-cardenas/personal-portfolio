@@ -14,7 +14,7 @@ export default function MovingGradient() {
         }}
       />
       <div className="absolute top-0 left-0 right-0 h-[75vh] overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-r from-pink-300 via-[#cbc1b4] to-[#9F9648]/85 opacity-90" />
+        <div className="absolute inset-0 bg-gradient-to-r from-[#F2BAE6] via-[#fce0ef] to-[#9b9ba5]/85 opacity-90" />
         <div className="absolute inset-x-0 bottom-0 h-[35vh] bg-gradient-to-b from-transparent via-white/70 to-white" />
       </div>
     </div>

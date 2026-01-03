@@ -7,8 +7,8 @@ const ExperiencePage = () => {
     {
       date: "Dec 2025 – Jan 2026",
       location: "Quito, Ecuador",
-      title: "Software Engineer Internship",
-      subtitle: "Import Aceros",
+      title: "Software Engineer Intern",
+      subtitle: "Alkaliza",
       description:
         "Developed a full-stack application to streamline and enhance inventory sourcing and procurement operations.",
       bullets: [
@@ -55,7 +55,7 @@ const ExperiencePage = () => {
       <MovingGradient />
       <div
         className="
-          min-h-screen bg-pink-60 flex flex-col items-center
+          min-h-screen flex flex-col items-center
           pt-32 px-10 pb-16
           max-sm:pt-36
           max-sm:px-5

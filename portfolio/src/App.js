@@ -11,7 +11,7 @@ import ExperiencePage from "./workExperience";
 
 function App() {
   return (
-    <div className="min-h-screen flex flex-col relative">
+    <div className="flex flex-col relative">
       <NavBar />
       <Sidebar />
       <main className="flex-1 app-content pb-12">

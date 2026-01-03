@@ -40,14 +40,15 @@ const MainPage = () => {
   return (
     <>
       <SoftBlobBackground />
-      <div className="relative min-h-screen w-full">
+
+      <div className="relative min-h-screen w-full overflow-hidden flex items-center justify-center">
         <div
           className="
-            min-h-screen flex flex-col items-center justify-center text-center
-            px-4 space-y-14
-            max-sm:space-y-8
-            max-sm:py-10
-          "
+        flex flex-col items-center justify-center text-center
+        px-4 space-y-14
+        max-sm:space-y-8
+        max-sm:py-10
+      "
         >
           <h4 className="text-2xl md:text-4xl font-display2 text-black max-sm:text-xl">
             Hi there! I'm <span className="italic font-bold">Mishell</span>.
@@ -55,11 +56,11 @@ const MainPage = () => {
 
           <h2
             className="
-              font-formal text-black italic leading-none tracking-tight
-              text-[15vw] md:text-[10vw]
-              max-sm:text-[14vw]
-              max-sm:leading-[0.95]
-            "
+          font-formal text-black italic leading-none tracking-tight
+          text-[14vw] md:text-[9vw]
+          max-sm:text-[13vw]
+          max-sm:leading-[0.95]
+        "
           >
             Welcome to my website!
           </h2>
@@ -70,7 +71,8 @@ const MainPage = () => {
               <br />
             </span>
             <span className="sm:hidden"> </span>
-            and skills to create <span className="italic font-bold">pretty things</span>!
+            and skills to create{" "}
+            <span className="italic font-bold">pretty things</span>!
           </h4>
         </div>
       </div>

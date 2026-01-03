@@ -16,28 +16,58 @@ export default function SoftBlobBackground() {
 
   const isPhone = typeof window !== "undefined" && window.innerWidth < 768;
 
-  const blur = isPhone ? "blur(45px)" : "blur(60px)";
+  const blur = isPhone ? "blur(38px)" : "blur(50px)";
   const saturate = isPhone ? "saturate(145%)" : "saturate(115%)";
   const scale = isPhone ? "scale(1.12)" : "scale(1.05)";
   const opacity = isPhone ? 1 : 0.95;
 
+  const PALETTE = {
+    pinkStrong: "244,148,220",
+    pinkSoft: "242,186,230",
+    blush: "252,224,239",
+    graySoft: "190,190,195",
+    gray: "155,155,165",
+  };
+
   return (
     <div className="pointer-events-none fixed inset-0 -z-10 overflow-hidden">
-      <div className="absolute inset-0" style={{ background: "#ECE7E1" }} />
+      <div className="absolute inset-0" style={{ background: "#D3D3D3" }} />
 
       <div
         className="absolute inset-0"
         style={{
           background: `
-            radial-gradient(800px 600px at 55% 40%, rgba(255,255,255,0.55) 0%, rgba(255,255,255,0) 60%),
+          radial-gradient(
+            900px 650px at 55% 40%,
+            rgba(${PALETTE.blush}, 0.8) 0%,
+            rgba(${PALETTE.blush}, 0) 70%
+          ),
 
-            radial-gradient(900px 700px at 10% 78%, rgba(206,147,172,0.85) 0%, rgba(206,147,172,0) 60%),
-            radial-gradient(700px 700px at 30% 35%, rgba(159,150,72,0.85) 0%, rgba(159,150,72,0) 60%),
-            radial-gradient(900px 800px at 72% 28%, rgba(164,115,126,0.70) 0%, rgba(164,115,126,0) 60%),
-            radial-gradient(900px 800px at 82% 70%, rgba(90,98,48,0.80) 0%, rgba(90,98,48,0) 65%),
-            radial-gradient(900px 700px at 50% 55%, rgba(184,155,108,0.55) 0%, rgba(184,155,108,0) 60%)
-          `,
-          filter: `${blur} ${saturate}`,
+          radial-gradient(
+            900px 750px at 45% 30%,
+            rgba(${PALETTE.graySoft}, 0.9) 0%,
+            rgba(${PALETTE.graySoft}, 0) 65%
+          ),
+
+          radial-gradient(
+            850px 700px at 30% 45%,
+            rgba(${PALETTE.pinkStrong}, 0.85) 0%,
+            rgba(${PALETTE.pinkStrong}, 0) 65%
+          ),
+
+          radial-gradient(
+            900px 700px at 70% 65%,
+            rgba(${PALETTE.pinkSoft}, 0.75) 0%,
+            rgba(${PALETTE.pinkSoft}, 0) 70%
+          ),
+
+          radial-gradient(
+            900px 700px at 70% 65%,
+            rgba(${PALETTE.pinkSoft}, 0.75) 0%,
+            rgba(${PALETTE.pinkSoft}, 0) 70%
+          )
+        `,
+          filter: `${blur} ${saturate} contrast(112%)`,
           transform: scale,
           opacity,
         }}

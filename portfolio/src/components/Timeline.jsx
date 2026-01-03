@@ -32,7 +32,7 @@ function TimelineEntry({
       `}
     >
       <div className="pointer-events-none absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2">
-        <div className="w-5 h-5 rounded-full border-4 border-white shadow bg-pink-300 max-sm:w-4 max-sm:h-4 max-sm:border-[3px]" />
+        <div className="w-5 h-5 rounded-full border-4 border-white shadow bg-pink-400 max-sm:w-4 max-sm:h-4 max-sm:border-[3px]" />
       </div>
 
       <motion.div
@@ -47,7 +47,7 @@ function TimelineEntry({
       >
         <div className="bg-white/60 backdrop-blur-lg border border-white/30 p-6 rounded-2xl shadow-xl transition transform hover:-translate-y-1 hover:scale-[1.02] max-sm:p-5">
           <div className="flex items-center mb-4 max-sm:mb-3">
-            <div className="bg-pink-400 p-3 rounded-full mr-4 max-sm:p-2.5 max-sm:mr-3">
+            <div className="bg-pink-500 p-3 rounded-full mr-4 max-sm:p-2.5 max-sm:mr-3">
               {Icon ? (
                 <Icon className="text-white text-xl max-sm:text-lg" />
               ) : null}
@@ -138,7 +138,7 @@ export default function Timeline({ items = [], title = "Timeline" }) {
           className="
             absolute left-1/2 -translate-x-1/2
             h-full w-1 rounded
-            bg-gradient-to-b from-pink-200 via-[#ede6df] to-[#9ba759]
+            bg-gradient-to-b from-[#F2BAE6] via-[#fce0ef] to-[#9b9ba5]/85
           "
         />
 

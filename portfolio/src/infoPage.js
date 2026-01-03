@@ -24,7 +24,7 @@ const InfoPage = () => {
           About Me
         </h2>
 
-        <div className="p-1 rounded-full bg-gradient-to-r from-[#9ba759] via-[#cfc5b9] to-pink-200 mb-10 max-sm:mb-8">
+        <div className="p-1 rounded-full bg-gradient-to-r from-[#9b9ba5] via-[#fce0ef] to-[#F2BAE6]/85 mb-10 max-sm:mb-8">
           <img
             src={aboutMe}
             alt="Profile"
@@ -46,32 +46,35 @@ const InfoPage = () => {
           "
         >
           <p>
-            I graduated with a Bachelor's in Business Administration, having a
+            I graduated with a Bachelor's in Business Administration, with a
             double concentration in Marketing and Supply Chain Management. After
             graduating, I spent two years working as a Management Assistant at
             Import Aceros, where I monitored day-to-day operations and helped
             automate several internal processes. One project I worked on
-            involved using SAP to predict demand of the products and improve
-            sourcing and procurement decisions.
+            involved using SAP to predict product demand and improve sourcing
+            and procurement decisions.
           </p>
 
           <p>
-            This experience showed me first hand how powerful technology and
-            automation can be in improving business performance, which motivated
-            me to pursue a Master's in Computer Science to complement my
-            business background. Now in my second year of the program, I have
-            developed the technical skills necessary to build real solutions,
-            such as a recent project I worked on were we built web application
-            to manage order operations at a microgreens company.
+            This experience showed me first-hand how powerful technology and
+            automation can be in improving business performance. Today, I am
+            pursuing an MSCS to complement my business acumen. Now in my second
+            year of the program, I have developed the technical skills and
+            industry knowledge necessary to build software solutions for
+            real-world problems. Most recently, I developed a web application to
+            manage orders for a Boston microgreen business, shifting operations
+            from spreadsheets to software and creating a centralized place where
+            all data is stored.
           </p>
 
           <p>
             As I move forward in computer science, I am excited about
-            opportunities that let me grow as a software engineer while allowing
-            me to apply my creativity when developing projects and solving real
-            life problems. I am also especially interested in AI and I am
-            currently working on a project that uses Gemini AI to generate
-            insights from consumer financial data.
+            opportunities that allow me to grow as a software engineer while
+            applying my creativity to developing projects and solving real-world
+            problems. I am also interested in the application of AI and machine
+            learning to enhance existing processes. This curiosity has pushed me
+            to work on a project that uses Gemini AI to generate insights from
+            consumer financial data.
           </p>
         </div>
       </div>

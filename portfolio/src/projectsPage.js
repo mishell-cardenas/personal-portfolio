@@ -17,9 +17,30 @@ import mb5 from "./assets/mb5.png";
 import mb6 from "./assets/mb6.png";
 import mb7 from "./assets/mb7.png";
 import mb8 from "./assets/mb8.png";
+import mb9 from "./assets/mb9.png";
+import mb10 from "./assets/mb10.png";
+import mb11 from "./assets/mb11.png";
+import mb12 from "./assets/mb12.png";
+import mb13 from "./assets/mb13.png";
+import mb14 from "./assets/mb14.png";
+import mb15 from "./assets/mb15.png";
+import mb16 from "./assets/mb16.png";
 import sap1 from "./assets/sap1.png";
 import sap2 from "./assets/sap2.png";
 import sap3 from "./assets/sap3.png";
+import sap4 from "./assets/sap4.png";
+import spotify1 from "./assets/spotify1.png";
+import spotify2 from "./assets/spotify2.png";
+import spotify3 from "./assets/spotify3.png";
+import spotify4 from "./assets/spotify4.png";
+import spotify5 from "./assets/spotify5.png";
+import spotify6 from "./assets/spotify6.png";
+import spotify7 from "./assets/spotify7.png";
+import spotify8 from "./assets/spotify8.png";
+import spotify9 from "./assets/spotify9.png";
+import spotify10 from "./assets/spotify10.png";
+import spotify11 from "./assets/spotify11.png";
+
 
 const ProjectsPage = () => {
   return (
@@ -28,10 +49,9 @@ const ProjectsPage = () => {
       <div
         className="
           min-h-screen flex flex-col items-center justify-center text-center
-          px-4 space-y-7 pt-28 pb-28
+          pt-32 px-10 pb-16
           max-sm:pt-36
-          max-sm:pb-20
-          max-sm:space-y-5
+          max-sm:px-5
         "
       >
         <h2 className="text-5xl font-display2 italic font-bold mb-6 max-sm:text-4xl max-sm:mb-4">
@@ -39,6 +59,95 @@ const ProjectsPage = () => {
         </h2>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-6xl w-full max-sm:gap-5">
+          <div className="bg-white p-8 rounded-lg shadow max-sm:p-5">
+            <Carousel
+              images={[spotify1, spotify2, spotify3, spotify4, spotify5, spotify6, spotify7, spotify8, spotify9, spotify10, spotify11]}
+              height="h-58"
+            />
+            <h3 className="text-xl font-semibold mb-2 text-center max-sm:text-lg">
+              Spotify Listening Profile
+            </h3>
+            <p className="max-sm:text-sm max-sm:leading-relaxed">
+              A full-stack web application that lets users authenticate with Spotify and view personalized 
+              profile data through a clean web interface.
+            </p>
+
+            <div className="max-sm:mt-2">
+              <TechPill tools={["TYPESCRIPT", "NODE.JS", "EXPRESS.JS", "REACT", "TAILWIND CSS", "VITE"]} />
+            </div>
+
+            <div className="flex justify-center mt-4 max-sm:mt-3">
+              <a
+                href="https://github.com/tchiahsu/spotify-listening-profile"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex mt-2 items-center gap-2 text-black hover:text-pink-500 transition font-medium"
+              >
+                <FaGithub size={23} />
+                <span>GitHub</span>
+              </a>
+            </div>
+          </div>
+
+          <div className="bg-white p-8 rounded-lg shadow max-sm:p-5">
+            <Carousel
+              images={[mb1, mb2, mb3, mb4, mb5, mb6, mb7, mb8, mb9, mb10, mb11, mb12, mb13, mb14, mb15, mb16]}
+              height="h-58"
+            />
+            <h3 className="text-xl font-semibold mb-2 text-center max-sm:text-lg">
+              GreenTrack: Microgreens Order Management System
+            </h3>
+            <p className="max-sm:text-sm max-sm:leading-relaxed">
+              Web based application to help microgreen farms manage their day to
+              day operations.
+            </p>
+            <div className="max-sm:mt-2">
+              <TechPill
+                tools={["PYTHON", "TYPESCRIPT", "REACT", "MYSQL", "FAST API"]}
+              />
+            </div>
+
+            <div className="flex justify-center mt-4 max-sm:mt-3">
+              <a
+                href="https://github.com/mishell-cardenas/microgreen_app"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex mt-2 items-center gap-2 text-black hover:text-pink-500 transition font-medium"
+              >
+                <FaGithub size={23} />
+                <span>GitHub</span>
+              </a>
+            </div>
+          </div>
+
+          <div className="bg-white p-6 rounded-lg shadow max-sm:p-5">
+            <Carousel images={[sap1, sap2, sap3, sap4]} height="h-58" />
+            <h3 className="text-xl font-semibold mb-2 text-center max-sm:text-lg">
+              SAP Logistics Data Integration
+            </h3>
+            <p className="max-sm:text-sm max-sm:leading-relaxed">
+              Web based application to help steel importing companies manage the
+              sourcing and procurement process through SAP Business One.
+            </p>
+
+            <div className="max-sm:mt-2">
+              <TechPill
+                tools={["REACT", "JAVASCRIPT", "HTML", "CSS", "SAP HANA"]}
+              />
+            </div>
+
+            <div className="flex justify-center mt-4 max-sm:mt-3">
+              <a
+                href="https://github.com/mishell778/infoImportaciones"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex mt-2 items-center gap-2 text-black hover:text-pink-500 transition font-medium"
+              >
+                <FaGithub size={23} />
+                <span>GitHub</span>
+              </a>
+            </div>
+          </div>
 
           <div className="bg-white p-8 rounded-lg shadow max-sm:p-5">
             <Carousel
@@ -69,7 +178,7 @@ const ProjectsPage = () => {
                 href="https://github.com/mishell778/personal-portfolio"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-center gap-2 text-black hover:text-pink-400 transition font-medium"
+                className="flex mt-2 items-center gap-2 text-black hover:text-pink-500 transition font-medium"
               >
                 <FaGithub size={23} />
                 <span>GitHub</span>
@@ -77,67 +186,6 @@ const ProjectsPage = () => {
             </div>
           </div>
 
-          <div className="bg-white p-8 rounded-lg shadow max-sm:p-5">
-            <Carousel
-              images={[mb1, mb2, mb3, mb4, mb5, mb6, mb7, mb8]}
-              height="h-58"
-            />
-            <h3 className="text-xl font-semibold mb-2 text-center max-sm:text-lg">
-              GreenTrack: Microgreens Order Management System
-            </h3>
-            <p className="max-sm:text-sm max-sm:leading-relaxed">
-              Web based application to help microgreen farms manage their day to
-              day operations.
-            </p>
-
-            <div className="max-sm:mt-2">
-              <TechPill
-                tools={["PYTHON", "TYPESCRIPT", "REACT", "MYSQL", "FAST API"]}
-              />
-            </div>
-
-            <div className="flex justify-center mt-4 max-sm:mt-3">
-              <a
-                href="https://github.com/mishell-cardenas/microgreen_app"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="flex items-center gap-2 text-black hover:text-pink-400 transition font-medium"
-              >
-                <FaGithub size={23} />
-                <span>GitHub</span>
-              </a>
-            </div>
-          </div>
-
-          <div className="bg-white p-6 rounded-lg shadow max-sm:p-5">
-            <Carousel images={[sap1, sap2, sap3]} height="h-58" />
-            <h3 className="text-xl font-semibold mb-2 text-center max-sm:text-lg">
-              SAP Logistics Data Integration
-            </h3>
-            <p className="max-sm:text-sm max-sm:leading-relaxed">
-              Web based application to help steel importing companies manage the
-              sourcing and procurement process of the products through SAP
-              Business One.
-            </p>
-
-            <div className="max-sm:mt-2">
-              <TechPill
-                tools={["REACT", "JAVASCRIPT", "HTML", "CSS", "SAP HANA"]}
-              />
-            </div>
-
-            <div className="flex justify-center mt-4 max-sm:mt-3">
-              <a
-                href="https://github.com/mishell778/infoImportaciones"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="flex items-center gap-2 text-black hover:text-pink-400 transition font-medium"
-              >
-                <FaGithub size={23} />
-                <span>GitHub</span>
-              </a>
-            </div>
-          </div>
           {/* <div className="bg-white p-6 rounded-lg shadow">
             <h3 className="text-xl font-semibold mb-2 text-center">Eclát Elan</h3>
             <p>
