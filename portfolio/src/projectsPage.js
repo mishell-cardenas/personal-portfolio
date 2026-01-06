@@ -78,7 +78,7 @@ const ProjectsPage = () => {
 
             <div className="flex justify-center mt-4 max-sm:mt-3">
               <a
-                href="https://github.com/tchiahsu/spotify-listening-profile"
+                href="https://github.com/mishell-cardenas/spotify-listening-profile"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex mt-2 items-center gap-2 text-black hover:text-pink-500 transition font-medium"
@@ -138,7 +138,7 @@ const ProjectsPage = () => {
 
             <div className="flex justify-center mt-4 max-sm:mt-3">
               <a
-                href="https://github.com/mishell778/infoImportaciones"
+                href="https://github.com/mishell-cardenas/infoImportaciones"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex mt-2 items-center gap-2 text-black hover:text-pink-500 transition font-medium"
@@ -175,7 +175,7 @@ const ProjectsPage = () => {
 
             <div className="flex justify-center mt-4 max-sm:mt-3">
               <a
-                href="https://github.com/mishell778/personal-portfolio"
+                href="https://github.com/mishell-cardenas/personal-portfolio"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex mt-2 items-center gap-2 text-black hover:text-pink-500 transition font-medium"
