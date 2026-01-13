@@ -1,5 +1,5 @@
 import React from "react";
-import { FaGithub } from "react-icons/fa";
+import { FaGithub, FaLink } from "react-icons/fa";
 import Carousel from "./components/Carousel";
 import TechPill from "./components/TechPill";
 import MovingGradient from "./components/MovingGradience";
@@ -85,6 +85,15 @@ const ProjectsPage = () => {
               >
                 <FaGithub size={23} />
                 <span>GitHub</span>
+              </a>
+              <a
+                href="https://spotifylisten.vercel.app/?error=missing_code"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex mt-2 ml-7 items-center gap-2 text-black hover:text-pink-500 transition font-medium"
+              >
+                <FaLink size={23} />
+                <span>Website</span>
               </a>
             </div>
           </div>
