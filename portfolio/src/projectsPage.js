@@ -40,6 +40,20 @@ import spotify8 from "./assets/spotify8.png";
 import spotify9 from "./assets/spotify9.png";
 import spotify10 from "./assets/spotify10.png";
 import spotify11 from "./assets/spotify11.png";
+import levelup1 from "./assets/levelup1.png";
+import levelup2 from "./assets/levelup2.png";
+import levelup3 from "./assets/levelup3.png";
+import levelup4 from "./assets/levelup4.png";
+import levelup5 from "./assets/levelup5.png";
+import levelup6 from "./assets/levelup6.png";
+import levelup7 from "./assets/levelup7.png";
+import reposcout1 from "./assets/reposcout1.png";
+import reposcout2 from "./assets/reposcout2.png";
+import reposcout3 from "./assets/reposcout3.png";
+import reposcout4 from "./assets/reposcout4.png";
+import reposcout5 from "./assets/reposcout5.png";
+import reposcout6 from "./assets/reposcout6.png";
+import reposcout7 from "./assets/reposcout7.png";
 
 
 const ProjectsPage = () => {
@@ -59,6 +73,83 @@ const ProjectsPage = () => {
         </h2>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-6xl w-full max-sm:gap-5">
+
+          <div className="bg-white p-8 rounded-lg shadow max-sm:p-5">
+            <Carousel
+              images={[reposcout1, reposcout2, reposcout3, reposcout4, reposcout5, reposcout6, reposcout7]}
+              height="h-58"
+            />
+            <h3 className="text-xl font-semibold mb-2 text-center max-sm:text-lg">
+              RepoScout
+            </h3>
+            <p className="max-sm:text-sm max-sm:leading-relaxed">
+              A full-stack web application that helps developers improve their coding skills by matching them to open-source GitHub repositories based on their current tech stack. Users can save repos to a personal tracker and log their contribution attempts over time.
+            </p>
+
+            <div className="max-sm:mt-2">
+              <TechPill tools={["JAVASCRIPT", "CSS", "HTML", "REACT", "NODE", "MONGODB", "EXPRESS", "BOOTSTRAP"]} />
+            </div>
+
+            <div className="flex justify-center mt-4 max-sm:mt-3">
+              <a
+                href="https://github.com/mishell-cardenas/RepoScout-app"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex mt-2 items-center gap-2 text-black hover:text-pink-500 transition font-medium"
+              >
+                <FaGithub size={23} />
+                <span>GitHub</span>
+              </a>
+              <a
+                href="https://reposcout-app-1.onrender.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex mt-2 ml-7 items-center gap-2 text-black hover:text-pink-500 transition font-medium"
+              >
+                <FaLink size={23} />
+                <span>Website</span>
+              </a>
+            </div>
+          </div>
+
+          <div className="bg-white p-8 rounded-lg shadow max-sm:p-5">
+            <Carousel
+              images={[levelup1, levelup2, levelup3, levelup4, levelup5, levelup6, levelup7]}
+              height="h-58"
+            />
+            <h3 className="text-xl font-semibold mb-2 text-center max-sm:text-lg">
+              LevelUp
+            </h3>
+            <p className="max-sm:text-sm max-sm:leading-relaxed">
+              A full-stack web application that allows users to discover video games, share reviews, record play sessions, and manage a personalized game library.
+            </p>
+
+            <div className="max-sm:mt-2">
+              <TechPill tools={["JAVASCRIPT", "CSS", "HTML", "NODE", "MONGODB", "EXPRESS", "BOOTSTRAP"]} />
+            </div>
+
+            <div className="flex justify-center mt-4 max-sm:mt-3">
+              <a
+                href="https://github.com/mishell-cardenas/LevelUp-app"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex mt-2 items-center gap-2 text-black hover:text-pink-500 transition font-medium"
+              >
+                <FaGithub size={23} />
+                <span>GitHub</span>
+              </a>
+              <a
+                href="https://levelup-zp2s.onrender.com/index.html"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex mt-2 ml-7 items-center gap-2 text-black hover:text-pink-500 transition font-medium"
+              >
+                <FaLink size={23} />
+                <span>Website</span>
+              </a>
+            </div>
+          </div>
+
           <div className="bg-white p-8 rounded-lg shadow max-sm:p-5">
             <Carousel
               images={[spotify1, spotify2, spotify3, spotify4, spotify5, spotify6, spotify7, spotify8, spotify9, spotify10, spotify11]}
@@ -107,7 +198,7 @@ const ProjectsPage = () => {
               GreenTrack: Microgreens Order Management System
             </h3>
             <p className="max-sm:text-sm max-sm:leading-relaxed">
-              Web based application to help microgreen farms manage their day to
+              A full-stack web application built to help microgreen farms manage their day to
               day operations.
             </p>
             <div className="max-sm:mt-2">
@@ -135,8 +226,8 @@ const ProjectsPage = () => {
               SAP Logistics Data Integration
             </h3>
             <p className="max-sm:text-sm max-sm:leading-relaxed">
-              Web based application to help steel importing companies manage the
-              sourcing and procurement process through SAP Business One.
+              A full-stack web application to help a steel importing company manage their
+              steel importation process using SAP Business One.
             </p>
 
             <div className="max-sm:mt-2">
@@ -174,7 +265,7 @@ const ProjectsPage = () => {
               Portfolio Website
             </h3>
             <p className="max-sm:text-sm max-sm:leading-relaxed">
-              Web based application to showcase my information in my personal
+              A web based application to showcase my information in my personal
               portfolio.
             </p>
 
