@@ -1,6 +1,6 @@
 export default function SkillCard({ title, skills }) {
   return (
-    <div className="bg-white border border-gray-100 rounded-2xl px-10 py-5 w-full hover:-translate-y-0.5  hover:border-pink-400">
+    <div className="bg-white border border-gray-100 rounded-2xl px-10 py-5 w-full hover:-translate-y-0.5  hover:border-pink-400 shadow-xl">
       <h4 className="text-base font-bold text-black tracking-wide mb-4">
         {title}
       </h4>

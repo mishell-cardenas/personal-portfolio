@@ -11,7 +11,7 @@ export default function EducationCard({
   return (
     <div
       className="bg-white border border-gray-100 rounded-2xl px-6 py-4 w-full
-                flex items-center gap-5 transition hover:-translate-y-0.5 hover:border-pink-400"
+                flex items-center gap-5 transition hover:-translate-y-0.5 hover:border-pink-400 shadow-xl"
     >
       {logoSrc ? (
         <img
