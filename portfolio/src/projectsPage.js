@@ -68,7 +68,7 @@ const ProjectsPage = () => {
           max-sm:px-5
         "
       >
-        <h2 className="text-5xl font-display2 italic font-bold mb-6 max-sm:text-4xl max-sm:mb-4">
+        <h2 className="text-4xl font-display2 italic font-bold mb-6 max-sm:text-4xl max-sm:mb-4">
           My Personal Projects
         </h2>
 

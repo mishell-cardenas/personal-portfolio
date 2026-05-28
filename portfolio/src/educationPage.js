@@ -27,7 +27,7 @@ const frameworks = [
 const databases = [
   { name: "MySQL", icon: "devicon-mysql-plain colored" },
   { name: "MongoDB", icon: "devicon-mongodb-plain-wordmark colored" },
-  { name: "PostgreSQL", icon: "devicon-postgresql-plain colored" }, 
+  { name: "PostgreSQL", icon: "devicon-postgresql-plain colored" },
   { name: "Git", icon: "devicon-git-plain colored" },
   { name: "GitHub", icon: "devicon-github-original" },
   { name: "Docker", icon: "devicon-docker-plain colored" },
@@ -47,15 +47,9 @@ const EducationPage = () => {
           max-sm:pb-14
         "
       >
-        <div className="w-full max-w-5xl mb-6 relative max-sm:mb-4">
-          <h2 className="text-5xl font-display2 italic font-bold text-center max-sm:text-4xl">
-            My Education and Skills
-          </h2>
-        </div>
-
-        <div className="w-full max-w-4xl px-4 mb-6 relative max-sm:mb-4">
-          <h3 className="text-2xl font-display2 italic font-bold text-gray-500 text-left">
-            Education
+        <div className="w-full max-w-4xl px-4 mb-4 relative max-sm:mb-4">
+          <h3 className="text-4xl font-display2 italic font-bold text-center max-sm:text-4xl">
+            My Education
           </h3>
         </div>
 
@@ -84,9 +78,9 @@ const EducationPage = () => {
           />
         </div>
 
-        <div className="w-full max-w-4xl px-4 mb-6 mt-8 relative max-sm:mb-4">
-          <h3 className="text-2xl font-display2 italic font-bold text-gray-500 text-left">
-            Skills
+        <div className="w-full max-w-4xl px-4 mb-4 mt-8 relative max-sm:mb-4">
+          <h3 className="text-4xl font-display2 italic font-bold text-center max-sm:text-4xl">
+            My Skills
           </h3>
         </div>
 

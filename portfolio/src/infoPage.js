@@ -16,7 +16,7 @@ const InfoPage = () => {
       >
         <h2
           className="
-            text-5xl font-display2 italic font-bold mb-8 text-center
+            text-4xl font-display2 italic font-bold mb-6 text-center
             max-sm:text-4xl
             max-sm:mb-6
           "

@@ -62,8 +62,8 @@ const ExperiencePage = () => {
           max-sm:pb-14
         "
       >
-        <div className="w-full max-w-5xl mb-6 relative max-sm:mb-4">
-          <h2 className="text-5xl font-display2 italic font-bold text-center max-sm:text-4xl">
+        <div className="w-full max-w-5xl relative">
+          <h2 className="text-4xl font-display2 italic font-bold text-center max-sm:text-4xl">
             My Work Experience
           </h2>
         </div>

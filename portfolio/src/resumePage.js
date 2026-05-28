@@ -1,7 +1,7 @@
 import MovingGradient from "./components/MovingGradience";
 
 const ResumePage = () => {
-  const pdfPath = `${process.env.PUBLIC_URL}/cardenas_espinosa_resume11.pdf`;
+  const pdfPath = `${process.env.PUBLIC_URL}/cardenas_espinosa_resume12.pdf`;
 
   return (
     <>
@@ -16,7 +16,7 @@ const ResumePage = () => {
         "
       >
         <div className="w-full max-w-5xl mb-6 relative max-sm:mb-4">
-          <h2 className="text-5xl font-display2 italic font-bold text-center max-sm:text-4xl">
+          <h2 className="text-4xl font-display2 italic font-bold text-center max-sm:text-4xl">
             My Resume
           </h2>
         </div>
