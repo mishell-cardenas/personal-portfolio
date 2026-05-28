@@ -1,7 +1,7 @@
 import MovingGradient from "./components/MovingGradience";
 
 const ResumePage = () => {
-  const pdfPath = `${process.env.PUBLIC_URL}/cardenas_espinosa_resume10.pdf`;
+  const pdfPath = `${process.env.PUBLIC_URL}/cardenas_espinosa_resume11.pdf`;
 
   return (
     <>

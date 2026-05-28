@@ -8,6 +8,7 @@ import InfoPage from "./infoPage";
 import ContactPage from "./contactPage";
 import ResumePage from "./resumePage";
 import ExperiencePage from "./workExperience";
+import EducationPage from "./educationPage";
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
           <Route path="/contactPage" element={<ContactPage />} />
           <Route path="/resumePage" element={<ResumePage />} />
           <Route path="/experiencePage" element={<ExperiencePage />} />
+          <Route path="/educationPage" element={<EducationPage />} />
         </Routes>
       </main>
 

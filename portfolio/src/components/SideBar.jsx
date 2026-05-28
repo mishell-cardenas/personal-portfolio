@@ -27,14 +27,14 @@ export default function Sidebar() {
         href="https://www.linkedin.com/in/mishell-cardenas/"
         target="_blank"
         rel="noopener noreferrer"
-        className="text-black hover:text-pink-400 transition"
+        className="text-black hover:text-pink-500 transition"
       >
         <FaLinkedinIn size={28} />
       </a>
 
       <a
         href="mailto:cardenasespinosa.m@northeastern.edu"
-        className="text-black hover:text-pink-400 transition"
+        className="text-black hover:text-pink-500 transition"
       >
         <MdEmail size={28} />
       </a>

@@ -69,6 +69,11 @@ export default function NavBar() {
           active={location.pathname === "/infoPage"}
         />
         <NavItem
+          label="Education & Skills"
+          onClick={() => go("/educationPage")}
+          active={location.pathname === "/educationPage"}
+        />
+        <NavItem
           label="Projects"
           onClick={() => go("/projectsPage")}
           active={location.pathname === "/projectsPage"}
