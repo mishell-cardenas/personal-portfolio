@@ -90,7 +90,7 @@ const EducationPage = () => {
           </h3>
         </div>
 
-        <div className="w-full max-w-4xl px-4 py-2 space-y-4">
+        <div className="w-full max-w-4xl px-4 py-2 space-y-8">
           <SkillCard title="Programming Languages" skills={languages} />
           <SkillCard title="Frameworks & Libraries" skills={frameworks} />
           <SkillCard title="Databases & Tools" skills={databases} />

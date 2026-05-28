@@ -2,11 +2,11 @@ import { useLocation, useNavigate } from "react-router-dom";
 
 function NavItem({ label, onClick, active = false }) {
   const base = `
-    px-5 py-2 rounded-full 
-    text-base md:text-lg 
+    px-4 py-1.5 rounded-full 
+    text-sm md:text-base
     font-sans font-semibold transition
-    max-sm:px-4 max-sm:py-2
-    max-sm:text-sm
+    max-sm:px-3 max-sm:py-1
+    max-sm:text-xs
     `;
 
   if (active) {

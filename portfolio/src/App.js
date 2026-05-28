@@ -1,4 +1,5 @@
-import { Routes, Route } from "react-router-dom";
+import { useEffect } from "react";
+import { Routes, Route, useLocation } from "react-router-dom";
 import NavBar from "./components/NavBar";
 import Sidebar from "./components/SideBar";
 import Footer from "./components/Footer";
@@ -11,6 +12,12 @@ import ExperiencePage from "./workExperience";
 import EducationPage from "./educationPage";
 
 function App() {
+  const { pathname } = useLocation();
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [pathname]);
+
   return (
     <div className="flex flex-col relative">
       <NavBar />
