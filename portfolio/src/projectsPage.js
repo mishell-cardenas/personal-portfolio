@@ -9,6 +9,7 @@ import portfolio3 from "./assets/personal_portfolio_3.png";
 import portfolio4 from "./assets/personal_portfolio_4.png";
 import portfolio5 from "./assets/personal_portfolio_5.png";
 import portfolio6 from "./assets/personal_portfolio_6.png";
+import portfolio7 from "./assets/personal_portfolio_7.png";
 import mb1 from "./assets/mb1.png";
 import mb2 from "./assets/mb2.png";
 import mb3 from "./assets/mb3.png";
@@ -258,6 +259,7 @@ const ProjectsPage = () => {
                 portfolio4,
                 portfolio5,
                 portfolio6,
+                portfolio7,
               ]}
               height="h-58"
             />
