@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/personal-portfolio/static/css/main.03329025.css",
-    "main.js": "/personal-portfolio/static/js/main.03dfb3a1.js",
+    "main.js": "/personal-portfolio/static/js/main.7ba8aeb6.js",
     "static/js/453.5d79306b.chunk.js": "/personal-portfolio/static/js/453.5d79306b.chunk.js",
     "static/media/levelup2.png": "/personal-portfolio/static/media/levelup2.b57ba4ebcba5f457f278.png",
     "static/media/spotify10.png": "/personal-portfolio/static/media/spotify10.af335d14a8c074ebfb37.png",
@@ -10,7 +10,7 @@
     "static/media/spotify4.png": "/personal-portfolio/static/media/spotify4.d06f4240add03111b690.png",
     "static/media/spotify5.png": "/personal-portfolio/static/media/spotify5.d06f4240add03111b690.png",
     "static/media/aurix3.png": "/personal-portfolio/static/media/aurix3.5268ca975f6b8a655cd1.png",
-    "static/media/about_me4.png": "/personal-portfolio/static/media/about_me4.a4cd33606b5d3da156c3.png",
+    "static/media/about_me6.png": "/personal-portfolio/static/media/about_me6.c1ce0cf5b2c21b41c3c0.png",
     "static/media/levelup5.png": "/personal-portfolio/static/media/levelup5.3fc4a0951766988ceda5.png",
     "static/media/personal_portfolio_2.png": "/personal-portfolio/static/media/personal_portfolio_2.cde49c3424ac478e1c63.png",
     "static/media/aurix2.png": "/personal-portfolio/static/media/aurix2.adf3e5f92191f5f2b94c.png",
@@ -63,11 +63,11 @@
     "static/media/spotify1.png": "/personal-portfolio/static/media/spotify1.b49e697a438292f9e231.png",
     "index.html": "/personal-portfolio/index.html",
     "main.03329025.css.map": "/personal-portfolio/static/css/main.03329025.css.map",
-    "main.03dfb3a1.js.map": "/personal-portfolio/static/js/main.03dfb3a1.js.map",
+    "main.7ba8aeb6.js.map": "/personal-portfolio/static/js/main.7ba8aeb6.js.map",
     "453.5d79306b.chunk.js.map": "/personal-portfolio/static/js/453.5d79306b.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.03329025.css",
-    "static/js/main.03dfb3a1.js"
+    "static/js/main.7ba8aeb6.js"
   ]
 }
