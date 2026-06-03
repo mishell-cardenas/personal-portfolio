@@ -55,7 +55,10 @@ import reposcout4 from "./assets/reposcout4.png";
 import reposcout5 from "./assets/reposcout5.png";
 import reposcout6 from "./assets/reposcout6.png";
 import reposcout7 from "./assets/reposcout7.png";
-
+import aurix1 from "./assets/aurix1.png";
+import aurix2 from "./assets/aurix2.png";
+import aurix3 from "./assets/aurix3.png";
+import aurix4 from "./assets/aurix4.png";
 
 const ProjectsPage = () => {
   return (
@@ -74,21 +77,88 @@ const ProjectsPage = () => {
         </h2>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-6xl w-full max-sm:gap-5">
+          <div className="bg-white p-8 rounded-lg shadow max-sm:p-5">
+            <Carousel images={[aurix1, aurix2, aurix3, aurix4]} height="h-58" />
+            <h3 className="text-xl font-semibold mb-2 text-center max-sm:text-lg">
+              Aurix
+            </h3>
+            <p className="max-sm:text-sm max-sm:leading-relaxed">
+              Aurix is a full-stack web application that gives users a
+              personalized spiritual "aura reading" powered by the Claude AI
+              API. The user enters their screen name, zodiac sign, emotional
+              state, and an optional Spotify username.
+            </p>
+
+            <div className="max-sm:mt-2">
+              <TechPill
+                tools={[
+                  "REACT",
+                  "TAILWIND CSS",
+                  "NODE.JS",
+                  "CLAUDE AI API",
+                  "VERCEL CLI",
+                ]}
+              />
+            </div>
+
+            <div className="flex justify-center mt-4 max-sm:mt-3">
+              <a
+                href="https://github.com/mishell-cardenas/Aurix-app"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex mt-2 items-center gap-2 text-black hover:text-pink-500 transition font-medium"
+              >
+                <FaGithub size={23} />
+                <span>GitHub</span>
+              </a>
+              <a
+                href="https://aurix-app-eosin.vercel.app/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex mt-2 ml-7 items-center gap-2 text-black hover:text-pink-500 transition font-medium"
+              >
+                <FaLink size={23} />
+                <span>Website</span>
+              </a>
+            </div>
+          </div>
 
           <div className="bg-white p-8 rounded-lg shadow max-sm:p-5">
             <Carousel
-              images={[reposcout1, reposcout2, reposcout3, reposcout4, reposcout5, reposcout6, reposcout7]}
+              images={[
+                reposcout1,
+                reposcout2,
+                reposcout3,
+                reposcout4,
+                reposcout5,
+                reposcout6,
+                reposcout7,
+              ]}
               height="h-58"
             />
             <h3 className="text-xl font-semibold mb-2 text-center max-sm:text-lg">
               RepoScout
             </h3>
             <p className="max-sm:text-sm max-sm:leading-relaxed">
-              A full-stack web application that helps developers improve their coding skills by matching them to open-source GitHub repositories based on their current tech stack. Users can save repos to a personal tracker and log their contribution attempts over time.
+              A full-stack web application that helps developers improve their
+              coding skills by matching them to open-source GitHub repositories
+              based on their current tech stack. Users can save repos to a
+              personal tracker and log their contribution attempts over time.
             </p>
 
             <div className="max-sm:mt-2">
-              <TechPill tools={["JAVASCRIPT", "CSS", "HTML", "REACT", "NODE", "MONGODB", "EXPRESS", "BOOTSTRAP"]} />
+              <TechPill
+                tools={[
+                  "JAVASCRIPT",
+                  "CSS",
+                  "HTML",
+                  "REACT",
+                  "NODE",
+                  "MONGODB",
+                  "EXPRESS",
+                  "BOOTSTRAP",
+                ]}
+              />
             </div>
 
             <div className="flex justify-center mt-4 max-sm:mt-3">
@@ -115,18 +185,38 @@ const ProjectsPage = () => {
 
           <div className="bg-white p-8 rounded-lg shadow max-sm:p-5">
             <Carousel
-              images={[levelup1, levelup2, levelup3, levelup4, levelup5, levelup6, levelup7]}
+              images={[
+                levelup1,
+                levelup2,
+                levelup3,
+                levelup4,
+                levelup5,
+                levelup6,
+                levelup7,
+              ]}
               height="h-58"
             />
             <h3 className="text-xl font-semibold mb-2 text-center max-sm:text-lg">
               LevelUp
             </h3>
             <p className="max-sm:text-sm max-sm:leading-relaxed">
-              A full-stack web application that allows users to discover video games, share reviews, record play sessions, and manage a personalized game library.
+              A full-stack web application that allows users to discover video
+              games, share reviews, record play sessions, and manage a
+              personalized game library.
             </p>
 
             <div className="max-sm:mt-2">
-              <TechPill tools={["JAVASCRIPT", "CSS", "HTML", "NODE", "MONGODB", "EXPRESS", "BOOTSTRAP"]} />
+              <TechPill
+                tools={[
+                  "JAVASCRIPT",
+                  "CSS",
+                  "HTML",
+                  "NODE",
+                  "MONGODB",
+                  "EXPRESS",
+                  "BOOTSTRAP",
+                ]}
+              />
             </div>
 
             <div className="flex justify-center mt-4 max-sm:mt-3">
@@ -153,19 +243,41 @@ const ProjectsPage = () => {
 
           <div className="bg-white p-8 rounded-lg shadow max-sm:p-5">
             <Carousel
-              images={[spotify1, spotify2, spotify3, spotify4, spotify5, spotify6, spotify7, spotify8, spotify9, spotify10, spotify11]}
+              images={[
+                spotify1,
+                spotify2,
+                spotify3,
+                spotify4,
+                spotify5,
+                spotify6,
+                spotify7,
+                spotify8,
+                spotify9,
+                spotify10,
+                spotify11,
+              ]}
               height="h-58"
             />
             <h3 className="text-xl font-semibold mb-2 text-center max-sm:text-lg">
               Spotify Listening Profile
             </h3>
             <p className="max-sm:text-sm max-sm:leading-relaxed">
-              A full-stack web application that lets users authenticate with Spotify and view personalized 
-              profile data through a clean web interface.
+              A full-stack web application that lets users authenticate with
+              Spotify and view personalized profile data through a clean web
+              interface.
             </p>
 
             <div className="max-sm:mt-2">
-              <TechPill tools={["TYPESCRIPT", "NODE.JS", "EXPRESS.JS", "REACT", "TAILWIND CSS", "VITE"]} />
+              <TechPill
+                tools={[
+                  "TYPESCRIPT",
+                  "NODE.JS",
+                  "EXPRESS.JS",
+                  "REACT",
+                  "TAILWIND CSS",
+                  "VITE",
+                ]}
+              />
             </div>
 
             <div className="flex justify-center mt-4 max-sm:mt-3">
@@ -192,15 +304,32 @@ const ProjectsPage = () => {
 
           <div className="bg-white p-8 rounded-lg shadow max-sm:p-5">
             <Carousel
-              images={[mb1, mb2, mb3, mb4, mb5, mb6, mb7, mb8, mb9, mb10, mb11, mb12, mb13, mb14, mb15, mb16]}
+              images={[
+                mb1,
+                mb2,
+                mb3,
+                mb4,
+                mb5,
+                mb6,
+                mb7,
+                mb8,
+                mb9,
+                mb10,
+                mb11,
+                mb12,
+                mb13,
+                mb14,
+                mb15,
+                mb16,
+              ]}
               height="h-58"
             />
             <h3 className="text-xl font-semibold mb-2 text-center max-sm:text-lg">
               GreenTrack: Microgreens Order Management System
             </h3>
             <p className="max-sm:text-sm max-sm:leading-relaxed">
-              A full-stack web application built to help microgreen farms manage their day to
-              day operations.
+              A full-stack web application built to help microgreen farms manage
+              their day to day operations.
             </p>
             <div className="max-sm:mt-2">
               <TechPill
@@ -227,8 +356,8 @@ const ProjectsPage = () => {
               SAP Logistics Data Integration
             </h3>
             <p className="max-sm:text-sm max-sm:leading-relaxed">
-              A full-stack web application to help a steel importing company manage their
-              steel importation process using SAP Business One.
+              A full-stack web application to help a steel importing company
+              manage their steel importation process using SAP Business One.
             </p>
 
             <div className="max-sm:mt-2">
