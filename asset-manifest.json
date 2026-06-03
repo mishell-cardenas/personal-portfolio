@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/personal-portfolio/static/css/main.03329025.css",
-    "main.js": "/personal-portfolio/static/js/main.4a9f9856.js",
+    "main.js": "/personal-portfolio/static/js/main.a9467fb2.js",
     "static/js/453.5d79306b.chunk.js": "/personal-portfolio/static/js/453.5d79306b.chunk.js",
     "static/media/levelup2.png": "/personal-portfolio/static/media/levelup2.b57ba4ebcba5f457f278.png",
     "static/media/spotify10.png": "/personal-portfolio/static/media/spotify10.af335d14a8c074ebfb37.png",
@@ -9,9 +9,12 @@
     "static/media/levelup3.png": "/personal-portfolio/static/media/levelup3.be19e85b24facf83cbf1.png",
     "static/media/spotify4.png": "/personal-portfolio/static/media/spotify4.d06f4240add03111b690.png",
     "static/media/spotify5.png": "/personal-portfolio/static/media/spotify5.d06f4240add03111b690.png",
+    "static/media/aurix3.png": "/personal-portfolio/static/media/aurix3.5268ca975f6b8a655cd1.png",
     "static/media/about_me4.png": "/personal-portfolio/static/media/about_me4.a4cd33606b5d3da156c3.png",
     "static/media/levelup5.png": "/personal-portfolio/static/media/levelup5.3fc4a0951766988ceda5.png",
     "static/media/personal_portfolio_2.png": "/personal-portfolio/static/media/personal_portfolio_2.cde49c3424ac478e1c63.png",
+    "static/media/aurix2.png": "/personal-portfolio/static/media/aurix2.adf3e5f92191f5f2b94c.png",
+    "static/media/aurix1.png": "/personal-portfolio/static/media/aurix1.6d28ff00284f4f2dd363.png",
     "static/media/personal_portfolio_5.png": "/personal-portfolio/static/media/personal_portfolio_5.b28772fd6fc8805d3b4e.png",
     "static/media/mb6.png": "/personal-portfolio/static/media/mb6.77d50297d4eab22c74b0.png",
     "static/media/spotify6.png": "/personal-portfolio/static/media/spotify6.87292fcaa2988749293a.png",
@@ -46,6 +49,7 @@
     "static/media/reposcout2.png": "/personal-portfolio/static/media/reposcout2.b5f5594fc682b5bfc24a.png",
     "static/media/spotify9.png": "/personal-portfolio/static/media/spotify9.ed73ba8e1ccc90778696.png",
     "static/media/sap3.png": "/personal-portfolio/static/media/sap3.c3b83fa755d65cec7b15.png",
+    "static/media/aurix4.png": "/personal-portfolio/static/media/aurix4.a40ddb0e2a7cca13fd29.png",
     "static/media/sap2.png": "/personal-portfolio/static/media/sap2.8768f18984c541f77b40.png",
     "static/media/sap4.png": "/personal-portfolio/static/media/sap4.10c440b387470492ad82.png",
     "static/media/reposcout7.png": "/personal-portfolio/static/media/reposcout7.a107cef8f0530d3cfa7b.png",
@@ -59,11 +63,11 @@
     "static/media/spotify1.png": "/personal-portfolio/static/media/spotify1.b49e697a438292f9e231.png",
     "index.html": "/personal-portfolio/index.html",
     "main.03329025.css.map": "/personal-portfolio/static/css/main.03329025.css.map",
-    "main.4a9f9856.js.map": "/personal-portfolio/static/js/main.4a9f9856.js.map",
+    "main.a9467fb2.js.map": "/personal-portfolio/static/js/main.a9467fb2.js.map",
     "453.5d79306b.chunk.js.map": "/personal-portfolio/static/js/453.5d79306b.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.03329025.css",
-    "static/js/main.4a9f9856.js"
+    "static/js/main.a9467fb2.js"
   ]
 }
