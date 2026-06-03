@@ -97,6 +97,7 @@ const ProjectsPage = () => {
                   "NODE.JS",
                   "CLAUDE AI API",
                   "VERCEL CLI",
+                  "SPOTIFY EMBED"
                 ]}
               />
             </div>
