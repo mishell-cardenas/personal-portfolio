@@ -153,7 +153,7 @@ const ProjectsPage = () => {
                   "CSS",
                   "HTML",
                   "REACT",
-                  "NODE",
+                  "NODE.JS",
                   "MONGODB",
                   "EXPRESS",
                   "BOOTSTRAP",
