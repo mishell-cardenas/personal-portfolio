@@ -1,4 +1,4 @@
-import aboutMe from "./assets/about_me4.png";
+import aboutMe from "./assets/about_me6.png";
 import MovingGradient from "./components/MovingGradience";
 
 const InfoPage = () => {
