@@ -59,6 +59,14 @@ import aurix1 from "./assets/aurix1.png";
 import aurix2 from "./assets/aurix2.png";
 import aurix3 from "./assets/aurix3.png";
 import aurix4 from "./assets/aurix4.png";
+import clio1 from "./assets/clio1.png";
+import clio2 from "./assets/clio2.png";
+import clio3 from "./assets/clio3.png";
+import clio4 from "./assets/clio4.png";
+import clio5 from "./assets/clio5.png";
+import clio6 from "./assets/clio6.png";
+import clio7 from "./assets/clio7.png";
+import clio8 from "./assets/clio8.png";
 
 const ProjectsPage = () => {
   return (
@@ -78,9 +86,60 @@ const ProjectsPage = () => {
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-6xl w-full max-sm:gap-5">
           <div className="bg-white p-8 rounded-lg shadow max-sm:p-5">
+            <Carousel images={[clio1, clio2, clio3, clio4, clio5, clio6, clio7, clio8]} height="h-58" />
+            <h3 className="text-xl font-semibold mb-2 text-center max-sm:text-lg">
+              CLIO - AI Financial Analysis Platform
+            </h3>
+            <p className="max-sm:text-sm max-sm:leading-relaxed">
+              Clio is a full-stack personal finance dashboard. Upload your bank
+              statement PDFs and Clio extracts the transactions, automatically
+              categorizes them, and lets you explore your money through
+              dashboards, budgets, and a natural-language AI chat that answers
+              questions like "where does most of my money go?" or "how much do I
+              spend on coffee?" — backed by your real data.
+            </p>
+
+            <div className="max-sm:mt-2">
+              <TechPill
+                tools={[
+                  "REACT",
+                  "VITE",
+                  "TAILWIND CSS",
+                  "NODE.JS",
+                  "TYPESCRIPT",
+                  "EXPRESS",
+                  "POSTGRESQL",
+                  "GOOGLE GEMINI API",
+                ]}
+              />
+            </div>
+
+            <div className="flex justify-center mt-4 max-sm:mt-3">
+              <a
+                href="https://github.com/mishell-cardenas/clio.ai"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex mt-2 items-center gap-2 text-black hover:text-pink-500 transition font-medium"
+              >
+                <FaGithub size={23} />
+                <span>GitHub</span>
+              </a>
+              <a
+                href="https://clio-ai.onrender.com/login"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex mt-2 ml-7 items-center gap-2 text-black hover:text-pink-500 transition font-medium"
+              >
+                <FaLink size={23} />
+                <span>Website</span>
+              </a>
+            </div>
+          </div>
+
+          <div className="bg-white p-8 rounded-lg shadow max-sm:p-5">
             <Carousel images={[aurix1, aurix2, aurix3, aurix4]} height="h-58" />
             <h3 className="text-xl font-semibold mb-2 text-center max-sm:text-lg">
-              Aurix
+              Aurix - Personalized AI Aura Reading Platform
             </h3>
             <p className="max-sm:text-sm max-sm:leading-relaxed">
               Aurix is a full-stack web application that gives users a
@@ -97,7 +156,7 @@ const ProjectsPage = () => {
                   "NODE.JS",
                   "CLAUDE AI API",
                   "VERCEL CLI",
-                  "SPOTIFY EMBED"
+                  "SPOTIFY EMBED",
                 ]}
               />
             </div>
@@ -138,7 +197,7 @@ const ProjectsPage = () => {
               height="h-58"
             />
             <h3 className="text-xl font-semibold mb-2 text-center max-sm:text-lg">
-              RepoScout
+              RepoScout - Repository Recommendation Engine
             </h3>
             <p className="max-sm:text-sm max-sm:leading-relaxed">
               A full-stack web application that helps developers improve their
@@ -198,7 +257,7 @@ const ProjectsPage = () => {
               height="h-58"
             />
             <h3 className="text-xl font-semibold mb-2 text-center max-sm:text-lg">
-              LevelUp
+              LevelUp - Game Discovery and Tracking Platform
             </h3>
             <p className="max-sm:text-sm max-sm:leading-relaxed">
               A full-stack web application that allows users to discover video
@@ -292,7 +351,7 @@ const ProjectsPage = () => {
                 <span>GitHub</span>
               </a>
               <a
-                href="https://spotifylisten.vercel.app/?error=missing_code"
+                href="https://spotify-frontend-j3yv.onrender.com/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex mt-2 ml-7 items-center gap-2 text-black hover:text-pink-500 transition font-medium"
@@ -347,6 +406,15 @@ const ProjectsPage = () => {
               >
                 <FaGithub size={23} />
                 <span>GitHub</span>
+              </a>
+              <a
+                href="https://microgreen-app-fiqc.onrender.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex mt-2 ml-7 items-center gap-2 text-black hover:text-pink-500 transition font-medium"
+              >
+                <FaLink size={23} />
+                <span>Website</span>
               </a>
             </div>
           </div>
