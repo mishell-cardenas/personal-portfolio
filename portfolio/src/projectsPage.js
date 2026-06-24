@@ -385,7 +385,7 @@ const ProjectsPage = () => {
               height="h-58"
             />
             <h3 className="text-xl font-semibold mb-2 text-center max-sm:text-lg">
-              GreenTrack: Microgreens Order Management System
+              GreenTrack - Microgreens Order Management System
             </h3>
             <p className="max-sm:text-sm max-sm:leading-relaxed">
               A full-stack web application built to help microgreen farms manage
