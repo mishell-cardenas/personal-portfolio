@@ -3,13 +3,13 @@ import { FaGithub, FaLink } from "react-icons/fa";
 import Carousel from "./components/Carousel";
 import TechPill from "./components/TechPill";
 import MovingGradient from "./components/MovingGradience";
-import portfolio1 from "./assets/personal_portfolio_1.png";
-import portfolio2 from "./assets/personal_portfolio_2.png";
-import portfolio3 from "./assets/personal_portfolio_3.png";
-import portfolio4 from "./assets/personal_portfolio_4.png";
-import portfolio5 from "./assets/personal_portfolio_5.png";
-import portfolio6 from "./assets/personal_portfolio_6.png";
-import portfolio7 from "./assets/personal_portfolio_7.png";
+// import portfolio1 from "./assets/personal_portfolio_1.png";
+// import portfolio2 from "./assets/personal_portfolio_2.png";
+// import portfolio3 from "./assets/personal_portfolio_3.png";
+// import portfolio4 from "./assets/personal_portfolio_4.png";
+// import portfolio5 from "./assets/personal_portfolio_5.png";
+// import portfolio6 from "./assets/personal_portfolio_6.png";
+// import portfolio7 from "./assets/personal_portfolio_7.png";
 import mb1 from "./assets/mb1.png";
 import mb2 from "./assets/mb2.png";
 import mb3 from "./assets/mb3.png";
@@ -448,7 +448,7 @@ const ProjectsPage = () => {
             </div>
           </div>
 
-          <div className="bg-white p-8 rounded-lg shadow max-sm:p-5">
+          {/* <div className="bg-white p-8 rounded-lg shadow max-sm:p-5">
             <Carousel
               images={[
                 portfolio1,
@@ -484,7 +484,7 @@ const ProjectsPage = () => {
                 <span>GitHub</span>
               </a>
             </div>
-          </div>
+          </div> */}
 
           {/* <div className="bg-white p-6 rounded-lg shadow">
             <h3 className="text-xl font-semibold mb-2 text-center">Eclát Elan</h3>
