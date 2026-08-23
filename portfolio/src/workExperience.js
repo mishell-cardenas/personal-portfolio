@@ -5,6 +5,21 @@ import MovingGradient from "./components/MovingGradience";
 const ExperiencePage = () => {
   const experiences = [
     {
+      date: "Jul 2026 – Present",
+      location: "Boston, Massachusetts",
+      title: "Full Stack Engineer Co-op",
+      subtitle: "Hometap",
+      description:
+        "Architected an electronic-signing integration between the company’s loan origination system and eSign platform via data ingestion pipelines.",
+      bullets: [
+        "Automated capture of 10+ document types per loan application by developing an event-driven pipeline that triggers document generation when a task is created for an applicant and ingested via webhook callbacks once they’re signed.",
+        "Designed an extensible document classification system that maps incoming document labels to internal document kinds via Django migrations to register and manage document kind definitions.",
+        "Implemented hash-key based authentication to establish a secure webhook connection for the eSign integration, generating and registering the signing key and storing it in AWS Secrets Manager.",
+        "Isolated e-signing tasks from a multi-task backend response by mapping tasks to their corresponding data based on task key, rendering them in a React modal with SCSS styling that routes users to their signing session via absolute URL.",
+      ],
+      icon: FaCode,
+    },
+    {
       date: "Dec 2025 – Jan 2026",
       location: "Quito, Ecuador",
       title: "Software Engineer Intern",
